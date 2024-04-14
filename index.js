@@ -1,16 +1,21 @@
 let bankBranchInstance = null;
+//This line declares a variable 
 
 class BankBranch {
-    // Constructor to initialize the singleton instance with branch information
+    // This class definition implements the Singleton pattern for a Bank Branch.
+
+
+    
+    //This line defines the constructor method for the BankBranch class.
     constructor(branchInfo) {
-        // Check if the singleton instance doesn't exist
+        // Check if the singleton instance doesn't exist 
         if (!BankBranch.bankBranchInstance) {
             // Initialize branchInfo with provided value
             this.branchInfo = branchInfo;
             // Assign this instance to the singleton instance
             BankBranch.bankBranchInstance = this;
         }
-        // Return the singleton instance
+        // this line returns the singleton instance of the BankBranch class. 
         return BankBranch.bankBranchInstance;
     }
 
